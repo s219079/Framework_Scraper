@@ -13,22 +13,22 @@
         <header class="container text-center">
             <h1 class="display-1">Ceneo Web Scraper</h1>
         </header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href=""><i class="bi bi-house-fill"></i> Strona główna</a>
+                            <a class="nav-link" href="{{url_for('index')}}"><i class="bi bi-house-fill"></i> Strona główna</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=""><i class="bi bi-cloud-download-fill"></i>
+                            <a class="nav-link" href="{{url_for('extract')}}"><i class="bi bi-cloud-download-fill"></i>
  Pobierz produkt</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=""><i class="bi bi-list-stars"></i> Lista produktów</a>
+                            <a class="nav-link" href="{{url_for('products')}}"><i class="bi bi-list-stars"></i> Lista produktów</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=""><i class="bi bi-person-circle"></i> O autorze</a>
+                            <a class="nav-link" href="{{url_for('author')}}"><i class="bi bi-person-circle"></i> O autorze</a>
                         </li>
                     </ul>
                 </div>
@@ -40,13 +40,13 @@
 
                 </div>
                 <div class="col">
-                {% block content %}
-                    <p>base.html.jinja</p>
-                {% endblock content %}
+                    {% block content %}
+                        <p>base.html.jinja</p>
+                    {% endblock content %}
                 </div>
             </div>
         </div>
-        <footer class="container bg-dark text-secondary fixed-bottom text-center">
+        <footer class="container bg-light text-secondary fixed-bottom text-center">
             <p>&copy; Katarzyna Wójcik Uniwersytet Ekonomiczny w Krakowie</p>
         </footer>
 

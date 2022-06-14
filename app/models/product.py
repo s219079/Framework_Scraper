@@ -71,3 +71,6 @@ class Product:
             os.makedirs("app/products")
         with open(f"app/products/{self.product_id}.json", "w", encoding="UTF-8") as jf:
             json.dump(self.opinions, jf, indent=4, ensure_ascii=False)
+    
+    def extract(self):
+        return ""

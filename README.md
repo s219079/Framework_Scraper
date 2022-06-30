@@ -50,3 +50,12 @@
 8. Wizualizacja danych
    1. Wyłuskanie informacji
    2. Renderowanie wykresu
+
+## Biblioteki użyte w kodzie źródłowym wersji rozszerzonej
+1. Requests: dodaje komunikację ze stronami html i przetwarzanie ich kodu
+2. os: zawiera podstawowe interfejsy do komunikacji z systemem operacyjnym
+3. Flask: obsługa zadań sieciowych
+4. Pandas: analiza danych
+5. Beautiful Soup: wyodrębnianie informacji z kodu źródłowego stron internetowych
+6. json: praca z plikami w formacie typu json
+7. markdown: funkcjonalność konwencji markdown i konwersja zwrotna do html
